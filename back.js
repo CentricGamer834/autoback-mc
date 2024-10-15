@@ -7,16 +7,17 @@ const fs = require("fs");
 
 function backupWorld() {
     const date = new Date();
-    const timestamp =
-        date.getMonth() +
-        "_" +
-        date.getDay() +
-        "_" +
-        date.getFullYear().toString().slice(-2) +
-        "@" +
-        date.getHours() +
-        "_0" +
-        date.getMinutes();
+    const timestamp = new Intl.DateTimeFormat("default", {
+        day: "numeric",
+        month: "numeric",
+        year: "2-digit",
+        era: "short",
+        hour12: true,
+        hour: "numeric",
+        minute: "numeric",
+    })
+        .format(date)
+        .replace(/\:|\//g, "_")
 
     const createdBackup = BACKUP_PATH + "/" + timestamp;
 
