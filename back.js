@@ -42,4 +42,4 @@ function startBackup() {
     setInterval(backupWorld, BACKUP_INTERVAL_MINUTES * 60000);
 }
 
-module.exports = { startBackup };
+module.exports = startBackup;
