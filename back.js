@@ -39,6 +39,7 @@ function backupWorld() {
 }
 
 function startBackup() {
+    backupWorld();
     setInterval(backupWorld, BACKUP_INTERVAL_MINUTES * 60000);
 }
 
