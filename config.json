@@ -1,0 +1,6 @@
+{
+    "WORLD_PATH": "WORLDPATH",
+    "BACKUP_PATH": "BACKUPFOLDER",
+    "BACKUP_INTERVAL_MINUTES": 15,
+    "UPDATE_URL": "https://raw.githubusercontent.com/CentricGamer834/autoback-mc/refs/heads/main/back.js"
+}
