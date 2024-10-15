@@ -1,1 +1,1 @@
-console.log("in the mainframe")
+module.exports = () => {console.log("in the mainframe")}
